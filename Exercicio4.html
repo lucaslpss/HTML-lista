@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4 - Lucas Lopes</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .estilo1{
+        display: block;
+        width: 100px;
+        float: left;
+    }
+    .estilo2{
+        display: block;
+        width: 50px;
+        float: left;
+    }
+    .estilo3{
+        margin-bottom: 2px;
+    }
+    form{
+        width: 300px;
+        padding: 2px;
+        margin: auto;
+    }
+    </style>
+</head>
+<body>
+    <form name="Agenda" method="post" action="agendar">
+        <label class="estilo2" for="idNome">Nome:</label>
+        <input class="estilo3" type="text" name="nome" id="idNome"><br>
+        <label class="estilo2" for="idEmail">E-mail:</label>
+        <input class="estilo3" type="text" name="email" id="idEmail"><br>
+
+        <fieldset>
+            <legend>Agenda</legend>
+            <label for="idTipoEmail">Tipo de E-mail:</label><br>
+            <input type="radio" name="TipoEmail" id="idEmailComercial" value="Comercial">Comercial<br>
+            <label for="idTipoEmail"></label>
+            <input type="radio" name="TipoEmail" id="idEmailPessoal" value="Pessoal">Pessoal<br>
+
+            <select name="cargo" id="idCargo">
+                <option selected disabled value="Escolha">Escolha</option>
+                <optgroup label="Cargos">
+                <option value="Presidente">Presidente</option>
+                <option value="Vice-Presidente">Vice-Presidente</option>
+                <option value="Diretor">Diretor</option>
+                <option value="Gerente">Gerente</option>
+                <option value="Supervisor">Supervisor</option>
+                <option value="Assistente">Assistente</option>
+            </select><br><br>
+            <label for="idEmpresa">Empresa:</label>
+            <input class="estilo3" type="text" name="Empresa" id="idEmpresa"><br>
+            <label class="estilo1" for="idTelComercial">Tel. Comercial:</label>
+            <input class="estilo3" type="text" name="TelCom" id="idTelComercial"><br>
+            <labelestilo1" for="idTelCelular">Tel. Celular: </label>
+            <input type="text" name="telCel" id="idTelCelular"> <br> <br>
+            <legend>Tipo do contato: </legend>
+            <label for="idComercial"></label>
+            <input type="checkbox" name="tipoContato" id="idComercial">Comercial<br>
+            <label for="idPessoal"></label>
+            <input type="checkbox" name="tipoContato" id="idPessoal">Pessoal <br>
+            <input type="submit" name="Enviar" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+</form>
+</body>
+</html>
